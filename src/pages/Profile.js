@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Profile(userInfo){
+  console.log(userInfo)
 return (
     <div>
     

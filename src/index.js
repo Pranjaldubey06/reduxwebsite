@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,7 +7,7 @@ import App from './App';
 import "slick-carousel/slick/slick.css";
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
-import firebaseConfigue  from "./firebase.configue"
+import {firebaseConfigue}  from "./firebase.configue"
 import {store,persistor} from './redux/store'
 
 

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   products: [],
-  userInfo: null,
+  userInfo: [],
 };
 export const shopifySlice = createSlice({
   name: "shopify",
@@ -11,7 +11,9 @@ export const shopifySlice = createSlice({
       const item = state.products.find((item) => item.id === action.payload.id);
       if (item) {
         item.quantity += action.payload.quantity;
-      } else state.products.push(action.payload);
+      } else {
+        state.products.push(action.payload);
+      }
     },
   incrementQuantity: (state, action) => {
       const item = state.products.find((item) => item.id === action.payload);

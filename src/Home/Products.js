@@ -3,13 +3,11 @@ import { useLoaderData } from "react-router-dom";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/shopifySlice";
-//import {Cart}from"../pages/Cart";
+//import {Cart} from "../pages/Cart";
 const Products = () => {
   const dispatch = useDispatch();
   const data = useLoaderData();
   const productData = data.data;
-  
-  
   return (
     <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-10 px-4">
       {productData.map((item) => (

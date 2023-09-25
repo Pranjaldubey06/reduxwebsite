@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux';
 import { BiLogoShopify, BiSolidDownArrow } from 'react-icons/bi'
 import { BsFillCartFill, BsSearch } from 'react-icons/bs'
@@ -12,7 +12,7 @@ import { userSignOut } from '../redux/shopifySlice';
   const Navbar =()=>{
   const auth = getAuth();
   const dispatch=useDispatch()
- // const[showAll,setShowAll]=useState(false)
+ //const[showAll,setShowAll]=useState(false)
   const products = useSelector((state)=>state.shopify.products);
  const userInfo=useSelector((state)=> state.shopify.userInfo)
  
