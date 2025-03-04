@@ -19,15 +19,16 @@ import Signin from "./Home/Signin";
 import Ragistration from "./Home/Ragistration";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
+import Products from "./Home/Products";
+import ProductDetail from "./pages/ProductDetailPage";
 
 
 const Layout = () => {
   return (
     <div>
-      {/* <Navbar/> */}
+     
       <Outlet />
-      {/* <FooterTop/>*/}
-      {/*<Footer/>*/}
+     
     </div>
   );
 };
@@ -39,6 +40,8 @@ function App() {
         <Route path="/Signin" element={<Signin />}></Route>
         <Route path="/Ragistration" element={<Ragistration />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/" element={<Products />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       
         <Route path="/profile" element={<Profile/>}></Route>
       </Route>

@@ -122,7 +122,9 @@ const Ragistration = () => {
     <div className="w-full bg-gray-100 pb-10">
       <form class="w-[250px] mx-auto flex flex-col items-center">
         {""}
-        <BiLogoShopify className=" w-32 text-2xl " size={120} />
+       <Link to="/" className="text-2xl mt-10 font-bold text-orange-500 ">
+                             amazon<span className="text-black ">.in</span>
+                           </Link>
         <div>
           <h2 className="font-titleFont text-2xl font-medium mb-4">
             Create Account
@@ -215,7 +217,7 @@ const Ragistration = () => {
           <br></br>
           <button
             onClick={handleRagistration}
-            className=" w-full font-normal rounded-sm bg-gradient-to-t from bg-yellow-600  hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 "
+            className=" w-full h-10 font-normal rounded-full bg-gradient-to-t from bg-yellow-400  hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 "
           >
             Continue
           </button>
